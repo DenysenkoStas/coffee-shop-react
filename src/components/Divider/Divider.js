@@ -1,11 +1,12 @@
 import React from 'react';
 import './Divider.scss';
 
-const Divider = ({light = '', classes = ''}) => {
+const Divider = ({light = '', linear = '', className = ''}) => {
     const color = light && ' divider--light';
-    const addClass = classes && ` ${classes}`;
+    const type = linear && ' divider--linear';
+    const addClass = className && ` ${className}`;
 
-    return <div className={`divider${color}${addClass}`}/>;
+    return <div className={`divider${color}${type}${addClass}`}/>;
 };
 
 export default Divider;

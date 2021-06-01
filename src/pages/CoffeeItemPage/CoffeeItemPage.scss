@@ -1,0 +1,42 @@
+.item-page {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    max-width: 895px;
+  }
+
+  &__col {
+    flex: 1 0;
+    max-width: 420px;
+  }
+
+  &__img {
+    max-width: 390px;
+    max-height: 355px;
+  }
+
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__divider {
+    margin-bottom: 25px;
+  }
+
+  &__desc {
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    margin-right: 5px;
+    font-family: 'Merienda-Bold', cursive;
+  }
+
+  &__price {
+    margin-left: 5px;
+    font-size: 22px;
+  }
+}

@@ -9,4 +9,17 @@
   &--light {
     background-image: url('./icons/divider.svg');
   }
+
+  &--linear {
+    margin: 15px auto;
+    max-width: 240px;
+    min-height: 1px;
+    background-color: #000000;
+    background-image: none;
+
+    &.divider--light {
+      background-color: #FFFFFF;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
 }

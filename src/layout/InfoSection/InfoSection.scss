@@ -1,0 +1,42 @@
+.info-section {
+  padding-top: 55px;
+  padding-bottom: 30px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__col {
+    flex: 1 0 0;
+    margin: auto;
+    max-width: 590px;
+
+    &--with-img {
+      margin: auto 30px;
+      max-width: 345px;
+    }
+  }
+
+  &__img {
+    margin: auto;
+    max-width: 270px;
+    max-height: 355px;
+    object-fit: cover;
+    filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
+  }
+
+  &__title {
+    margin: 20px auto;
+  }
+
+  &__desc {
+    margin: 25px auto auto;
+
+    p {
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+  }
+}

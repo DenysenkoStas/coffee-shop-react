@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../../layout/Container/Container';
 import HeroSection from '../../layout/HeroSection/HeroSection';
-import Divider from '../../components/Divider/Divider';
+import InfoSection from '../../layout/InfoSection/InfoSection';
 import ProductList from '../../layout/ProductList/ProductList';
 import './MainPage.scss';
 
@@ -17,35 +17,30 @@ const MainPage = () => {
         {id: 2, img: aromistico, title: 'AROMISTICO Coffee 1 kg', price: '6.99'}
     ];
 
+    const infoSection = {
+        title: 'About us',
+        desc: [
+            'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.\n' +
+            'Afraid at highly months do things on at. Situation recommend objection do intention\n' +
+            'so questions. As greatly removed calling pleased improve an. Last ask him cold feel\n' +
+            'met spot shy want. Children me laughing we prospect answered followed. At it went\n' +
+            'is song that held help face.',
+            'Now residence dashwoods she excellent you. Shade being under his bed her, Much\n' +
+            'read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant\n' +
+            'horrible but confined day end marriage. Eagerness furniture set preserved far\n' +
+            'recommend. Did even but nor are most gave hope. Secure active living depend son\n' +
+            'repair day ladies now.'
+        ]
+    };
+
     return (
         <Container mainClass='main-page'>
             <HeroSection/>
-            <section className='info-section section-wrap'>
-                <div className='info-section__container container text-center'>
-                    <h2 className='info-section__title section-title'>About Us</h2>
-                    <Divider classes='info-section__divider'/>
-                    <div className='info-section__text'>
-                        <p>
-                            Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
-                            Afraid at highly months do things on at. Situation recommend objection do intention
-                            so questions. As greatly removed calling pleased improve an. Last ask him cold feel
-                            met spot shy want. Children me laughing we prospect answered followed. At it went
-                            is song that held help face.
-                        </p>
-                        <p>
-                            Now residence dashwoods she excellent you. Shade being under his bed her, Much
-                            read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant
-                            horrible but confined day end marriage. Eagerness furniture set preserved far
-                            recommend. Did even but nor are most gave hope. Secure active living depend son
-                            repair day ladies now.
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <InfoSection classes='main-page__info section-wrap'{...infoSection}/>
             <section className='best-goods-section section-wrap' style={{backgroundImage: `url(${bg})`}}>
                 <div className='container'>
                     <h2 className='best-goods-section__title section-title text-center'>Our best</h2>
-                    <ProductList data={bestGoods}/>
+                    <ProductList data={bestGoods} opacity/>
                 </div>
             </section>
         </Container>

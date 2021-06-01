@@ -1,0 +1,16 @@
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 85px 15px;
+  min-height: 260px;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    font-family: 'Merienda-bold', cursive;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+  }
+}

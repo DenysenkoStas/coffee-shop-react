@@ -1,11 +1,12 @@
 import React from 'react';
-import './SectionTitle.scss';
+import placeholder from './images/placeholder.jpg';
+import './TitleSection.scss';
 
-const TitleSection = () => {
+const TitleSection = ({title, bg}) => {
     return (
-        <div>
-
-        </div>
+        <section className='title-section' style={{backgroundImage: `url(${bg ? bg : placeholder})`}}>
+            <h1 className='title-section__title'>{title}</h1>
+        </section>
     );
 };
 
