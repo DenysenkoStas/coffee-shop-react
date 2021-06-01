@@ -1,7 +1,7 @@
 import React from 'react';
 import './SectionTitle.scss';
 
-const SectionTitle = () => {
+const TitleSection = () => {
     return (
         <div>
 
@@ -9,4 +9,4 @@ const SectionTitle = () => {
     );
 };
 
-export default SectionTitle;
+export default TitleSection;

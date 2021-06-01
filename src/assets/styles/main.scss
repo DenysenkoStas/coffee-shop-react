@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: 'Merienda';
+  font-family: 'Merienda-Bold';
   src: url('../fonts/Merienda-Bold.ttf') format('truetype');
 }
 
@@ -18,5 +18,31 @@ body {
 }
 
 .root {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+a, button {
+  transition: .3s;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: normal;
+}
+
+.section-wrap {
+  padding: 80px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 830px;
 }

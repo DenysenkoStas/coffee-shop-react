@@ -1,0 +1,35 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 640px;
+  background-position: center;
+  background-size: cover;
+  background-color: #bba777;
+
+  &__container {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: 'Merienda-Bold', cursive;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__desc {
+    margin-top: 35px;
+  }
+
+  &__desc-item {
+    margin-bottom: 20px;
+    font-family: 'Merienda-Bold', cursive;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}

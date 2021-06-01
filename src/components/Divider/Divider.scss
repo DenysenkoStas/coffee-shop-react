@@ -1,0 +1,12 @@
+.divider {
+  min-width: 200px;
+  min-height: 30px;
+  background-image: url('./icons/divider-dark.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &--light {
+    background-image: url('./icons/divider.svg');
+  }
+}

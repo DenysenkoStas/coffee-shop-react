@@ -1,0 +1,30 @@
+.main-page {
+  .info-section {
+    &__container {
+      max-width: 620px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__divider {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .best-goods-section {
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+}
